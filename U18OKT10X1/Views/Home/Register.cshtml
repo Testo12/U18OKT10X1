@@ -1,7 +1,49 @@
-﻿
+﻿@model U18OKT10X1.Models.RegisterInfo
 @{
     ViewBag.Title = "Register";
 }
 
-<h2>Register</h2>
+<div class=" panel panel-success">
+    <div class=" panel-heading text-center">
+        <h2>Register Form</h2>
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        <div class="form-group">
+            <lable>Name:</lable> @Html.TextBoxFor(anka => anka.Name, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <lable>Adress:</lable> @Html.TextBoxFor(anka => anka.Adress, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <lable>Phone:</lable> @Html.TextBoxFor(anka => anka.Phone, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <lable>Email:</lable> @Html.TextBoxFor(anka => anka.Email, new { @class = "form-control" })
+        </div>
+
+        //AM, A1, A2, A, B, BE, C1, C, C1E, CE, D1, D, D1E
+
+
+        <div class="form-group">
+            <Label>Type of Driver Licens</Label>: @Html.DropDownListFor(anka => anka.Licens, new[] {
+        new SelectListItem() {Text ="AM" },
+        new SelectListItem() {Text ="A1" },
+        new SelectListItem() {Text ="A2" },
+        new SelectListItem() {Text ="A" },
+        new SelectListItem() {Text ="B" },
+        new SelectListItem() {Text ="BE" },
+        new SelectListItem() {Text ="C1" },
+        new SelectListItem() {Text ="C" },
+        new SelectListItem() {Text ="C1E" },
+        new SelectListItem() {Text ="CE" },
+        new SelectListItem() {Text ="D1" },
+        new SelectListItem() {Text ="D" },
+        new SelectListItem() {Text ="D1E", }}, "Make a Choice")
+        </div>
+        <input class=" btn btn-success" type="submit" value="Submit my information" />
+
+    }
+</div>
 
