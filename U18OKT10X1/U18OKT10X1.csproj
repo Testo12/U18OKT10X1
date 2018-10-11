@@ -102,7 +102,6 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Register.cshtml" />
-    <Content Include="Views\Home\Cars.cshtml" />
     <Content Include="Views\Home\Sucess.cshtml" />
   </ItemGroup>
   <ItemGroup>

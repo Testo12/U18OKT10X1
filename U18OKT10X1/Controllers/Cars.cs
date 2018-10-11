@@ -7,5 +7,6 @@ namespace U18OKT10X1.Controllers
 {
     public class Cars
     {
+
     }
 }

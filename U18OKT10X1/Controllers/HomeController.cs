@@ -14,19 +14,30 @@ namespace U18OKT10X1.Controllers
             return View();
         }
 
-        public ActionResult Register()
+        [HttpGet]
+        public ViewResult Register()
         {
             return View();
         }
 
-        public ActionResult Cars()
+        [HttpGet]
+        public ViewResult Register2()
         {
             return View();
         }
 
-        public ActionResult Sucess()
+        [HttpPost]
+        public ViewResult Register(Models.RegisterInfo ri)
         {
-            return View();
+            if (ModelState.IsValid == true)
+            {
+                return View("Sucess", ri);
+            }
+            else
+            {
+                return View();
+
+            }
         }
     }
 }

@@ -1,7 +1,10 @@
-﻿
+﻿@model U18OKT10X1.Models.RegisterInfo
 @{
     ViewBag.Title = "Sucess";
 }
 
-<h2>Sucess</h2>
-
+<h2>Thank you @Model.Name</h2>
+@if (Model.Licens == true)
+{
+    <p> Hello </p>
+}

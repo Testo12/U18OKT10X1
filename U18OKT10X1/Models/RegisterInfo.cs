@@ -18,7 +18,7 @@ namespace U18OKT10X1.Models
         public String Phone { get; set; }
 
         [Required(ErrorMessage = "Please Enter Your Adress")]
-        public bool Adress { get; set; }
+        public String Home { get; set; }
 
         [Required(ErrorMessage = "Please Enter Your Driver licens information")]
         public bool Licens { get; set; }
